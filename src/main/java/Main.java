@@ -6,12 +6,7 @@ import service.InvalidAnimalException;
 public class Main {
     public static void main(String[] args)  {
         //создаем анонимный класс для вызова default метода интерфейса CreateAnimalService
-        CreateAnimalService createAnimalService = new CreateAnimalService()
-        {
-            @Override
-            public void createAnimals(){}
-        };
-
+        CreateAnimalService createAnimalService = new CreateAnimalService(){};
         try {
             createAnimalService.createAnimals();
         } catch (InvalidAnimalBirthDateException e) {
