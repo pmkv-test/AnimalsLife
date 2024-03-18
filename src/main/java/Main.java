@@ -1,6 +1,3 @@
-import animal.pet.Dog;
-import animal.predator.Shark;
-import animal.predator.Wolf;
 import service.CreateAnimalService;
 import service.CreateAnimalServiceImpl;
 import service.InvalidAnimalBirthDateException;
