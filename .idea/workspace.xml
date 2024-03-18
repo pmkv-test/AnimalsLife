@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a359178-9b26-4d01-b34a-7881f55de2bb" name="Changes" comment="ООП,Exception,Junit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="2a359178-9b26-4d01-b34a-7881f55de2bb" name="Changes" comment="ООП,Exception,Junit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +40,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_directory_selection": "C:/Users/Andrew/IdeaProjects/mts-homework-APimkov/AnimalsLife/src/main/java",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -153,7 +151,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710575909388</updated>
       <workItem from="1710575911760" duration="18000000" />
-      <workItem from="1710602802535" duration="28413000" />
+      <workItem from="1710602802535" duration="28766000" />
     </task>
     <task id="LOCAL-00001" summary="ООП,Exception,Junit">
       <created>1710737547475</created>
@@ -162,7 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710737547475</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ООП,Exception,Junit">
+      <created>1710737719158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710737719158</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ООП,Exception,Junit">
+      <created>1710737770975</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710737770975</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
