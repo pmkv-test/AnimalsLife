@@ -7,14 +7,13 @@ import animal.predator.Predator;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class CreateAnimalServiceImpl extends CreateAnimalService {
+public class CreateAnimalServiceImpl implements CreateAnimalService {
 
 
     public void createAnimals(int countAnimals) throws InvalidAnimalBirthDateException {
-        Utils utils = new Utils();
         for (int i = 0; i <= countAnimals-1; i++) {
             AbstractAnimal animal = createObject(i);
-            LocalDate birthDate = utils.getRandomDate();
+            LocalDate birthDate = Utils.getRandomDate();
             animal.setBirthDate(birthDate);
             animal.setName(String.valueOf(i+1));
             SearchServiceImpl searchService = new SearchServiceImpl();
@@ -26,11 +25,10 @@ public class CreateAnimalServiceImpl extends CreateAnimalService {
 
     @Override
     public void createAnimals() throws InvalidAnimalBirthDateException {
-        Utils utils = new Utils();
         int count = 0;
         do {
             AbstractAnimal animal = createObject(count); // Создание нового объекта, реализующего интерфейс
-            LocalDate birthDate = utils.getRandomDate();
+            LocalDate birthDate = Utils.getRandomDate();
             animal.setBirthDate(birthDate);
             animal.setName(String.valueOf(count+1));
             SearchServiceImpl searchService = new SearchServiceImpl();

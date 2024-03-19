@@ -12,9 +12,9 @@ import animal.predator.Wolf;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class CreateAnimalService {
+public interface CreateAnimalService {
 
-    protected AbstractAnimal createObject(int i) {
+    default AbstractAnimal createObject(int i) {
         switch (i % 4) {
             case 0:
                 return new Shark();
@@ -29,14 +29,12 @@ public class CreateAnimalService {
         }
     }
 
-    public void createAnimals() throws InvalidAnimalBirthDateException {
+    default void createAnimals() throws InvalidAnimalBirthDateException {
         int count = 0;
-        Utils utils = new Utils();
-
         while (count < 10)
         {
             AbstractAnimal animal = createObject(count);
-            LocalDate birthDate = utils.getRandomDate();
+            LocalDate birthDate = Utils.getRandomDate();
             animal.setBirthDate(birthDate);
             animal.setName(String.valueOf(count+1));
             SearchServiceImpl searchService = new SearchServiceImpl();
