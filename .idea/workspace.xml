@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a359178-9b26-4d01-b34a-7881f55de2bb" name="Changes" comment="ООП,Exception,Junit">
+    <list default="true" id="2a359178-9b26-4d01-b34a-7881f55de2bb" name="Changes" comment="добавил анонимный класс для вызова default метода интерфейса CreateAnimalService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -33,18 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Andrew/IdeaProjects/mts-homework-APimkov/AnimalsLife/src/main/java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "C:/Users/Andrew/IdeaProjects/mts-homework-APimkov/AnimalsLife/src/main/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dto" />
@@ -63,7 +72,7 @@
       <recent name="service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchServiceImplTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="AnimalsLife" />
@@ -136,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchServiceImplTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SearchServiceImplTest" />
+        <item itemvalue="JUnit.SearchServiceImplTest.testExceptionAnimalObjectNull" />
         <item itemvalue="JUnit.SearchServiceImplTest.testCheckLeapYearAnimalPositive" />
         <item itemvalue="JUnit.SearchServiceImplTest.testCheckLeapYearAnimalNegative" />
-        <item itemvalue="JUnit.SearchServiceImplTest.testExceptionAnimalObjectNull" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +163,7 @@
       <updated>1710575909388</updated>
       <workItem from="1710575911760" duration="18000000" />
       <workItem from="1710602802535" duration="30299000" />
+      <workItem from="1710739552456" duration="6745000" />
     </task>
     <task id="LOCAL-00001" summary="ООП,Exception,Junit">
       <created>1710737547475</created>
@@ -183,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710738009311</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ООП,Exception,Junit">
+      <created>1710739733275</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710739733275</updated>
+    </task>
+    <task id="LOCAL-00006" summary="добавил анонимный класс для вызова default метода интерфейса CreateAnimalService">
+      <created>1710762632158</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710762632158</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +218,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="classToInterface" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -202,6 +238,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ООП,Exception,Junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="ООП,Exception,Junit" />
+    <MESSAGE value="добавил анонимный класс для вызова default метода интерфейса CreateAnimalService" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил анонимный класс для вызова default метода интерфейса CreateAnimalService" />
   </component>
 </project>
