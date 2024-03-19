@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a359178-9b26-4d01-b34a-7881f55de2bb" name="Changes" comment="ООП,Exception,Junit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2a359178-9b26-4d01-b34a-7881f55de2bb" name="Changes" comment="ООП,Exception,Junit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="classToInterface" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -138,9 +141,9 @@
       <list>
         <item itemvalue="JUnit.SearchServiceImplTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SearchServiceImplTest.testExceptionAnimalObjectNull" />
         <item itemvalue="JUnit.SearchServiceImplTest.testCheckLeapYearAnimalPositive" />
         <item itemvalue="JUnit.SearchServiceImplTest.testCheckLeapYearAnimalNegative" />
-        <item itemvalue="JUnit.SearchServiceImplTest.testExceptionAnimalObjectNull" />
       </list>
     </recent_temporary>
   </component>
