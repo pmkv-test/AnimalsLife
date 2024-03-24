@@ -4,6 +4,11 @@ import java.time.LocalDate;
 
 public class Wolf extends Predator {
 
+    @Override
+    public String getType() {
+        String type = "Wolf";
+        return type;
+    }
 
     @Override
     //порода
@@ -17,7 +22,7 @@ public class Wolf extends Predator {
     public String getName() {
         return super.name;
     }
-
+    @Override
     public void setName(String animalName) {
         name = "Волк_"+animalName;
     }
