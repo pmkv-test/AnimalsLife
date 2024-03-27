@@ -51,19 +51,15 @@ public class AnimalRepositoryImpl implements AnimalRepository {
     @Override
     public Map<String, Integer> findDuplicate(Animal[] animals) {
         Map<String, Integer> duplicatesMap = new HashMap<>();
+        Map<String, Integer> result = new HashMap<>();
         for (Animal animal : animals) {
             if (duplicatesMap.containsKey(animal.getType())) {
                 duplicatesMap.put(animal.getType(), duplicatesMap.get(animal.getType()) + 1);
+                if (duplicatesMap.get(duplicatesMap.keySet().iterator().next()) > 1) {
+                    result.put(animal.getType(), duplicatesMap.get(animal.getType()));
+                }
             } else {
                 duplicatesMap.put(animal.getType(), 1);
-            }
-        }
-
-        Map<String, Integer> result = new HashMap<>();
-        for (Map.Entry<String, Integer> entry : duplicatesMap.entrySet()) {
-            if (entry.getValue() > 1) {
-                result.put(entry.getKey(), entry.getValue());
-                System.out.println(entry.getKey()+"="+entry.getValue());
             }
         }
         return result;

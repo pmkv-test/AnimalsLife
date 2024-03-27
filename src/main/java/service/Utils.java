@@ -10,7 +10,9 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Utils {
     public static LocalDate getRandomDate() {
-        String startDate = "20-12-2015", endDate = "10-03-2024",  format = "dd-MM-yyyy";
+        String startDate = "20-12-2015";
+        String endDate = "10-03-2024";
+        String format = "dd-MM-yyyy";
 
         try {
             LocalDate start = LocalDate.parse(startDate, DateTimeFormatter.ofPattern(format));
@@ -27,9 +29,7 @@ public class Utils {
 
     public static Animal[] listToArray(List<Animal> animals) {
         Animal[] animalArray = new Animal[animals.size()];
-        for (int i = 0; i < animals.size(); i++) {
-            animalArray[i] = animals.get(i);
-        }
+        animalArray = animals.toArray(animalArray);
         return animalArray;
     }
 
