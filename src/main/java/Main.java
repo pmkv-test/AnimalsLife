@@ -1,7 +1,12 @@
+import animal.Animal;
 import service.CreateAnimalService;
 import service.CreateAnimalServiceImpl;
 import service.InvalidAnimalBirthDateException;
 import service.InvalidAnimalException;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args)  {

@@ -6,11 +6,11 @@ import java.time.LocalDate;
 
 public abstract class Predator extends AbstractAnimal {
 
-    @Override
+/*    @Override
     public String getType() {
-        String type = "Хищник";
+        String type = "Predator";
         return type;
-    }
+    }*/
 
 
 }

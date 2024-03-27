@@ -4,10 +4,10 @@ import animal.AbstractAnimal;
 
 public abstract class Pet extends AbstractAnimal {
 
-    @Override
+/*    @Override
     public String getType() {
-        String type = "Домашний";
+        String type = "Pet";
         return type;
-    }
+    }*/
 
 }

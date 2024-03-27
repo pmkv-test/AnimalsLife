@@ -7,6 +7,11 @@ public class Shark extends Predator {
     public LocalDate birtDate = super.birthDate;
 
     @Override
+    public String getType() {
+        String type = "Shark";
+        return type;
+    }
+    @Override
     //порода
     public String gertBreed() {
         super.breed = "Акулья порода";
@@ -18,7 +23,7 @@ public class Shark extends Predator {
     public String getName() {
         return super.name;
     }
-
+    @Override
     public void setName(String animalName) {
         name = "Акула_"+animalName;
     }
