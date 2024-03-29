@@ -14,6 +14,8 @@ public interface Animal {
 
     LocalDate getBirthDate();
 
+    int getAge();
+
     String getType();
 
 

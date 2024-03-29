@@ -31,7 +31,7 @@ public class Cat extends Pet {
     @Override
     //цена
     public Double getCost() {
-        super.cost = 10.50;
+        super.cost = 400.50;
         return super.cost;
     }
 
