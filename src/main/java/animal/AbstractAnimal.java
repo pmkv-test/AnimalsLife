@@ -12,11 +12,18 @@ public abstract class AbstractAnimal implements Animal {
     protected Double cost;
     protected String character;
     protected LocalDate birthDate;
+    protected String getType;
 
     @Override
     public LocalDate getBirthDate() {
         return birthDate;
     }
+
+    @Override
+    public String getType() {
+        return getType;
+    }
+
     public void setBirthDate(LocalDate extBirthDate) {
         birthDate = extBirthDate;
     }

@@ -5,6 +5,12 @@ import java.time.LocalDate;
 public class Dog extends Pet {
 
     @Override
+    public String getType() {
+        String type = "Dog";
+        return type;
+    }
+
+    @Override
     //порода
     public String gertBreed() {
         super.breed = "Собачья порода";
@@ -16,7 +22,7 @@ public class Dog extends Pet {
     public String getName() {
         return super.name;
     }
-
+    @Override
     public void setName(String animalName) {
         name = "Собака_"+animalName;
     }
