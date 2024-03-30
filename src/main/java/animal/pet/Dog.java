@@ -27,10 +27,10 @@ public class Dog extends Pet {
         name = "Собака_"+animalName;
     }
 
+    public void setCost(double cost) {super.cost = cost;}
     @Override
     //цена
     public Double getCost() {
-        super.cost = 50.50;
         return super.cost;
     }
 

@@ -1,5 +1,7 @@
 package animal;
 
+import service.Utils;
+
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -13,17 +15,16 @@ public abstract class AbstractAnimal implements Animal {
     protected String character;
     protected LocalDate birthDate;
     protected String getType;
-
     @Override
     public LocalDate getBirthDate() {
         return birthDate;
     }
-
     @Override
     public String getType() {
         return getType;
     }
-
+    @Override
+    public int getAge() { return Utils.calculateAge(birthDate); }
     public void setBirthDate(LocalDate extBirthDate) {
         birthDate = extBirthDate;
     }

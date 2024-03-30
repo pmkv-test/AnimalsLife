@@ -10,7 +10,6 @@ public class Cat extends Pet {
         return type;
     }
 
-
     @Override
     //порода
     public String gertBreed() {
@@ -28,10 +27,10 @@ public class Cat extends Pet {
         name = "Кошка_"+animalName;
     }
 
+    public void setCost(double cost) {super.cost = cost;}
     @Override
     //цена
     public Double getCost() {
-        super.cost = 10.50;
         return super.cost;
     }
 
