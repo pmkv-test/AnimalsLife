@@ -4,8 +4,6 @@ import java.time.LocalDate;
 
 public class Shark extends Predator {
 
-    public LocalDate birtDate = super.birthDate;
-
     @Override
     public String getType() {
         String type = "Shark";
@@ -28,10 +26,10 @@ public class Shark extends Predator {
         name = "Акула_"+animalName;
     }
 
+    public void setCost(double cost) {super.cost = cost;}
     @Override
     //цена
     public Double getCost() {
-        super.cost = 500.45;
         return super.cost;
     }
 

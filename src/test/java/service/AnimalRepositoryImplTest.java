@@ -32,12 +32,14 @@ class AnimalRepositoryImplTest {
         birthDate = LocalDate.parse("11-03-2023", DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         shark.setBirthDate(birthDate);
         shark.setName("1");
+        shark.setCost(500.45);
         listTestAnimal.add(shark);
 
         shark = new Shark();
         birthDate = LocalDate.parse("21-10-2023", DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         shark.setBirthDate(birthDate);
         shark.setName("2");
+        shark.setCost(500.45);
         listTestAnimal.add(shark);
 
         wolf = new Wolf();
@@ -45,30 +47,36 @@ class AnimalRepositoryImplTest {
         birthDate = LocalDate.parse("15-02-2024", DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         wolf.setBirthDate(birthDate);
         wolf.setName("4");
+        wolf.setCost(800.50);
         listTestAnimal.add(wolf);
+
         //високосный год
         cat = new Cat();
         birthDate = LocalDate.parse("10-01-2016", DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         cat.setBirthDate(birthDate);
         cat.setName("8");
+        cat.setCost(400.50);
         listTestAnimal.add(cat);
 
         dog = new Dog();
         birthDate = LocalDate.parse("27-09-2017", DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         dog.setBirthDate(birthDate);
         dog.setName("9");
+        dog.setCost(50.50);
         listTestAnimal.add(dog);
 
         dog = new Dog();
         birthDate = LocalDate.parse("26-11-2018", DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         dog.setBirthDate(birthDate);
         dog.setName("10");
+        dog.setCost(50.50);
         listTestAnimal.add(dog);
 
         dog = new Dog();
         birthDate = LocalDate.parse("16-12-2019", DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         dog.setBirthDate(birthDate);
         dog.setName("7");
+        dog.setCost(50.50);
         listTestAnimal.add(dog);
 
         return listTestAnimal;

@@ -26,14 +26,18 @@ public class AnimalRepositoryImpl implements AnimalRepository {
 
     @Override
     public Map<Animal, Integer> findOlderAnimal(Animal[] animals, int N) {
+        Animal oldestAnimal = null;
         Map<Animal, Integer> olderAnimal = Arrays.stream(animals)
                 .filter(animal -> animal.getAge() > N)
                 .peek(animal -> System.out.println(animal.getName() + " " + animal.getBirthDate()))
                 .collect(Collectors.toMap(Function.identity(), Animal::getAge));
 
-        Animal oldestAnimal = Arrays.stream(animals)
-                .max(Comparator.comparingInt(animal -> Utils.calculateAge(animal.getBirthDate())))
-                .orElse(null);
+        //если при заданном N не было найдено ни одного животного, возвращаем самого старшего
+        if (olderAnimal.isEmpty()) {
+            oldestAnimal = Arrays.stream(animals)
+                    .max(Comparator.comparing(animal -> Utils.calculateAge(animal.getBirthDate())))
+                    .orElse(null);
+        }
 
         if (oldestAnimal != null) {
             olderAnimal.put(oldestAnimal, oldestAnimal.getAge());

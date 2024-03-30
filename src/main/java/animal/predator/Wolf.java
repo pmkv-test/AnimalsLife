@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 public class Wolf extends Predator {
 
+    private static final Double COST = 800.50;
+
     @Override
     public String getType() {
         String type = "Wolf";
@@ -27,10 +29,10 @@ public class Wolf extends Predator {
         name = "Волк_"+animalName;
     }
 
+    public void setCost(double cost) {super.cost = cost;}
     @Override
     //цена
     public Double getCost() {
-        super.cost = 800.50;
         return super.cost;
     }
 
